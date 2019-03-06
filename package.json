@@ -1,0 +1,27 @@
+{
+  "name": "send-file",
+  "version": "1.0.0",
+  "description": "send localfile to aws",
+  "main": "index.js",
+  "bin": {
+    "send": "./bin/send.js",
+    "send-version": "./bin/version.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "s3",
+    "send"
+  ],
+  "author": "woolson",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.406.0",
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "file-extension": "^4.0.5",
+    "ora": "^3.1.0",
+    "uid": "0.0.2"
+  }
+}
