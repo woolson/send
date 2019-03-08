@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "standard"
+  ],
+  "rules": {},
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}
