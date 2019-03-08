@@ -1,15 +1,13 @@
 {
   "name": "send-file",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "send localfile to aws",
   "main": "index.js",
   "bin": {
     "send": "./bin/send.js",
-    "send-version": "./bin/version.js"
+    "send-config": "./bin/config.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [
     "s3",
     "send"
@@ -22,6 +20,9 @@
     "commander": "^2.19.0",
     "file-extension": "^4.0.5",
     "ora": "^3.1.0",
-    "uid": "0.0.2"
+    "prompts": "^2.0.3",
+    "uid": "0.0.2",
+    "user-home": "^2.0.0",
+    "yaml": "^1.3.2"
   }
 }
