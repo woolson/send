@@ -1,6 +1,6 @@
 {
   "name": "send-file",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "send localfile to aws",
   "main": "index.js",
   "bin": {
@@ -26,6 +26,7 @@
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
     "file-extension": "^4.0.5",
+    "guess-content-type": "^0.1.0",
     "ora": "^3.1.0",
     "prompts": "^2.0.3",
     "uid": "0.0.2",
