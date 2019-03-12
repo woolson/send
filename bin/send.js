@@ -9,7 +9,7 @@ const createConf = require('../lib/create-conf')
 
 program
   .version(require('../package').version)
-  .usage(`<file> [options], ${chalk.bold('Run command config before send file!')}`)
+  .usage(`<file|file-link> [options], ${chalk.bold('Run command config before send file!')}`)
   .option('--hash', 'add hash at end of filename')
   .option('-p, --path', 'specific file storage path, default: it-platform')
   .command('config', 'view or edit s3 config')
