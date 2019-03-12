@@ -11,7 +11,10 @@ npm install -g .
 ## 使用
 
 ```shell
+# send 跟上本地文件路径或线上文件链接
 send path/to/file/demo.jpg
+# or
+send http://file/link.jpg
 
 # 选项
 Options:
