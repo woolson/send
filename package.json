@@ -1,6 +1,6 @@
 {
   "name": "send-file",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "send localfile to aws",
   "main": "index.js",
   "bin": {
