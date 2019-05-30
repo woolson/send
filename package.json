@@ -24,7 +24,9 @@
   "dependencies": {
     "aws-sdk": "^2.406.0",
     "chalk": "^2.4.2",
+    "clipboardy": "^2.0.0",
     "commander": "^2.19.0",
+    "execa": "^1.0.0",
     "ext-name": "^5.0.0",
     "got": "^9.6.0",
     "ora": "^3.1.0",
