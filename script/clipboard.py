@@ -20,5 +20,5 @@ try:
 
     img_file.save(file_path)
     print(file_path, end="")
-except Exception :
+except Exception:
     print('error', end="")
