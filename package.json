@@ -1,11 +1,10 @@
 {
   "name": "@woolson/send-file",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "get local image link",
   "main": "index.js",
   "bin": {
-    "send": "./bin/send.js",
-    "send-config": "./bin/config.js"
+    "send": "./bin/send.js"
   },
   "scripts": {
     "lint": "eslint --ext .js ."
