@@ -1,5 +1,5 @@
 {
-  "name": "send-file",
+  "name": "@woolson/send-file",
   "version": "1.4.0",
   "description": "get local image link",
   "main": "index.js",
@@ -19,7 +19,10 @@
       "pre-commit": "npm run lint"
     }
   },
-  "author": "woolson",
+  "author": "Woolson Lee",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.406.0",
