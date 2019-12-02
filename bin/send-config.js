@@ -1,25 +1,19 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const path = require('path')
 const yaml = require('yaml')
-const userHome = require('user-home')
 const logger = require('../lib/logger')
 const {
-  readFileSync,
-  existsSync,
   writeFileSync
 } = require('fs')
-const createConf = require('../lib/create-conf')
+const {
+  CONF_PATH,
+  config,
+  createConf
+} = require('../lib/config')
 
-const CONF_PATH = path.join(userHome, '.sendrc')
-let confStr = ''
-let confObj = {}
-
-if (existsSync(CONF_PATH)) {
-  confStr = readFileSync(CONF_PATH, 'utf-8')
-  confObj = yaml.parse(confStr)
-}
+// let confStr = ''
+let confObj = config()
 
 program
   .usage('-e <key> [value]')
@@ -37,9 +31,9 @@ if (program.edit) {
     createConf(confObj)
   }
 } else if (program.show) {
-  if (confStr) {
-    logger.info('exists config:\n')
-    console.log(confStr)
+  if (Object.keys(confObj).length) {
+    // logger.info('Send config:\n')
+    // console.log(confObj)
   } else {
     logger.info('config is empty!')
   }

@@ -2,10 +2,9 @@
 
 const program = require('commander')
 const chalk = require('chalk')
+const Send = require('../lib/send')
+const { config } = require('../lib/config')
 const logger = require('../lib/logger')
-const CONFIG = require('../lib/aws-config')
-const sendFile = require('../lib/send-file')
-const createConf = require('../lib/create-conf')
 
 program
   .version(require('../package').version)
@@ -16,11 +15,11 @@ program
   .option('-n, --filename <name>', 'name the store file name')
   .parse(process.argv)
 
-if (program.args[0] !== 'config') {
-  if (!Object.keys(CONFIG).length) {
-    logger.info('No config be found, start config!')
-    createConf()
-  } else {
-    sendFile()
-  }
-}
+logger.info('Send By [AWS S3]')
+new Send({ // eslint-disable-line
+  storePath: program.path || config().S3_PATH || 'temp/',
+  filePath: program.args[0],
+  addHash: program.hash || false,
+  fromClipboard: program.clipboard || false,
+  aliasName: program.filename
+})
