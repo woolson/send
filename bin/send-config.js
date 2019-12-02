@@ -32,8 +32,8 @@ if (program.edit) {
   }
 } else if (program.show) {
   if (Object.keys(confObj).length) {
-    // logger.info('Send config:\n')
-    // console.log(confObj)
+    logger.info('Send config:\n')
+    console.log(confObj)
   } else {
     logger.info('config is empty!')
   }
