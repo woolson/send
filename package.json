@@ -9,7 +9,8 @@
     "send-config": "./bin/send-config.js"
   },
   "scripts": {
-    "lint": "eslint --ext .js ."
+    "lint": "eslint --ext .js .",
+    "postinstall": "node ./bin/install.js"
   },
   "keywords": [
     "s3",

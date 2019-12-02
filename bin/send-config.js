@@ -15,6 +15,8 @@ const {
 // let confStr = ''
 let confObj = config()
 
+console.log(process.env.INIT_CWD)
+
 program
   .usage('-e <key> [value]')
   .option('-e, --edit', 'create or edit s3 config')
