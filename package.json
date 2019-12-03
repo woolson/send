@@ -1,10 +1,10 @@
 {
   "name": "@woolson/send",
   "version": "1.5.0",
-  "description": "Get image link by aws or imagur.",
+  "description": "Get image link by aws or imgur.",
   "main": "index.js",
   "bin": {
-    "send-img": "./bin/send-imagur.js",
+    "send-img": "./bin/send-imgur.js",
     "send-aws": "./bin/send-aws.js",
     "send-config": "./bin/send-config.js"
   },
