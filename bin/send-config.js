@@ -12,10 +12,7 @@ const {
   createConf
 } = require('../lib/config')
 
-// let confStr = ''
 let confObj = config()
-
-console.log(process.env.INIT_CWD)
 
 program
   .usage('-e <key> [value]')
