@@ -32,7 +32,7 @@ if (program.edit) {
 } else if (program.show) {
   if (Object.keys(confObj).length) {
     logger.info('Send config:\n')
-    console.log(confObj)
+    console.log(yaml.stringify(confObj))
   } else {
     logger.info('config is empty!')
   }
