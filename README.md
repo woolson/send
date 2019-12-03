@@ -1,3 +1,3 @@
-# SendFile
+# Send
 
-📘 Documentation: [https://blog.woolson.cn/app/send-file](https://blog.woolson.cn/app/send-file)
+📘 [Document link](https://blog.woolson.cn/app/send-file)
