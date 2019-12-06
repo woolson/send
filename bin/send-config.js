@@ -4,12 +4,9 @@ const program = require('commander')
 const yaml = require('yaml')
 const logger = require('../lib/logger')
 const {
-  writeFileSync
-} = require('fs')
-const {
-  CONF_PATH,
   config,
-  createConf
+  createConf,
+  setConfig
 } = require('../lib/config')
 
 let confObj = config()
@@ -24,7 +21,7 @@ if (program.edit) {
   const args = program.args || []
   if (args.length) {
     confObj[args[0]] = args[1]
-    writeFileSync(CONF_PATH, yaml.stringify(confObj))
+    setConfig(confObj)
     logger.succ(`add config ${args[0]}:${args[1]} complete!`)
   } else {
     createConf(confObj)
