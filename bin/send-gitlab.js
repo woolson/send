@@ -3,7 +3,7 @@
 const program = require('commander')
 const logger = require('../lib/logger')
 const Send = require('../lib/send')
-const { createConf, getConfig } = require('../lib/logger')
+const { createConf, getConfig } = require('../lib/config')
 
 program
   .version(require('../package').version)
@@ -14,13 +14,14 @@ program
 if (program.edit) {
   const config = getConfig()
   createConf({
-    IMGUR_CLIENT_ID: config.IMGUR_CLIENT_ID
-  }, 'imgur')
+    GITLAB_USER_NAME: config.GITLAB_USER_NAME,
+    GITLAB_USER_PASS: config.GITLAB_USER_PASS
+  }, 'gitlab')
 } else {
-  logger.info('Send By [Imgur]')
+  logger.info('Send By [GitLab]')
   new Send({ // eslint-disable-line
     filePath: program.args[0],
     fromClipboard: program.clipboard || false,
-    imgur: true
+    gitlab: true
   })
 }
