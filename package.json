@@ -31,6 +31,7 @@
     "execa": "^1.0.0",
     "ext-name": "^5.0.0",
     "form-data": "^3.0.0",
+    "got": "^9.6.0",
     "htmlparser2": "^4.0.0",
     "node-electron-clipboard": "^0.2.0",
     "ora": "^3.1.0",
