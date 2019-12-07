@@ -1,7 +1,7 @@
 {
   "name": "@woolson/send",
-  "version": "1.6.0",
-  "description": "Get image link by aws or imgur.",
+  "version": "1.6.1",
+  "description": "Get image link by gitlab/aws/imgur.",
   "main": "index.js",
   "bin": {
     "send-img": "./bin/send-imgur.js",
