@@ -14,8 +14,7 @@ program
 if (program.edit) {
   const config = getConfig()
   createConf({
-    GITLAB_USER_NAME: config.GITLAB_USER_NAME,
-    GITLAB_USER_PASS: config.GITLAB_USER_PASS
+    GITLAB_TOKEN: config.GITLAB_TOKEN
   }, 'gitlab')
 } else {
   logger.info('Send By [GitLab]')
