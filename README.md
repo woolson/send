@@ -1,3 +1,3 @@
 # Send
 
-📘 [Document link](https://blog.woolson.cn/app/send-file)
+📘 [Document link](https://blog.woolson.cn/tools/send.html)

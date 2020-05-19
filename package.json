@@ -1,6 +1,6 @@
 {
   "name": "@woolson/send",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "description": "Get image link by gitlab/aws/imgur.",
   "main": "index.js",
   "bin": {
