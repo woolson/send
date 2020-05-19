@@ -1,6 +1,6 @@
 {
   "name": "@woolson/send",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "Get image link by gitlab/aws/imgur.",
   "main": "index.js",
   "bin": {
@@ -34,11 +34,13 @@
     "chalk": "^2.4.2",
     "clipboardy": "^2.0.0",
     "commander": "^2.19.0",
+    "date-format": "^3.0.0",
     "execa": "^1.0.0",
     "ext-name": "^5.0.0",
     "form-data": "^3.0.0",
     "got": "^9.6.0",
     "htmlparser2": "^4.0.0",
+    "imageinfo": "^1.0.4",
     "node-electron-clipboard": "^0.2.0",
     "ora": "^3.1.0",
     "prompts": "^2.3.0",

@@ -31,6 +31,7 @@ if (program.edit) {
     filePath: program.args[0],
     addHash: program.hash || false,
     fromClipboard: program.clipboard || false,
-    aliasName: program.filename
+    aliasName: program.filename,
+    method: 'AWS'
   })
 }

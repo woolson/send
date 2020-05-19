@@ -21,6 +21,6 @@ if (program.edit) {
   new Send({ // eslint-disable-line
     filePath: program.args[0],
     fromClipboard: program.clipboard || false,
-    gitlab: true
+    method: 'GitLab'
   })
 }
