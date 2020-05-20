@@ -1,12 +1,13 @@
 {
   "name": "@woolson/send",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Get image link by gitlab/aws/imgur.",
   "main": "index.js",
   "bin": {
     "send-img": "./bin/send-imgur.js",
     "send-aws": "./bin/send-aws.js",
     "send-gl": "./bin/send-gitlab.js",
+    "send-ls": "./bin/send-list.js",
     "send-config": "./bin/send-config.js"
   },
   "scripts": {
